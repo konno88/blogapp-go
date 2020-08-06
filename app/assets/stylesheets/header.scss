@@ -4,12 +4,22 @@ $avatar-size: 40px;
 $header-padding-y: 16px;
 $back-icon-size: 16px;
 
+
 .header {
   display: flex;
   justify-content: space-between;
   background-color: $primary-color;
   padding: $header-padding-y 16px;
   font-weight: bold;
+
+  &_loginBtn {
+    background-color: $base-bg-color;
+    height: $avatar-size;
+    font-size: 12px;
+    padding: 12px 16px;
+    color: $primary-color;
+    border-radius: 8px;
+  }
 
   &_logos {
     min-width: 0;
@@ -43,10 +53,6 @@ $back-icon-size: 16px;
 .dropdown {
   position: relative;
   display: inline-block;
-
-  a {
-      display: none;
-  }
 }
 
 .dropdown-content {
